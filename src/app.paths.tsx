@@ -26,23 +26,39 @@ class AppRoutes {
     return "/";
   }
 
-  getExamplePagePath():string{
+  getExamplePagePath(): string {
     return `/address/:addressId/view`;
   }
 
-  getExamplePageUrl():string{
+  getExamplePageUrl(): string {
     return this.getExamplePagePath();
   }
 
   // Example on a path with dynamic variables
-  getExampleByIdPagePath():string{
+  getExampleByIdPagePath(): string {
     return `/example/:id`;
   }
 
-  getExampleByIdPageUrl(id:string):string{
-    return this.getExampleByIdPagePath().replace(':id',id);
+  getExampleByIdPageUrl(id: string): string {
+    return this.getExampleByIdPagePath().replace(":id", id);
   }
-  // ./Example
+  //about-us
+
+  getAboutUsPagePath(): string {
+    return "/about-us";
+  }
+
+  getAboutUsPagePathUrl(): string {
+    return `/about-us`;
+  }
+  // contact us
+  getContactPagePath(): string {
+    return "/contact-us";
+  }
+
+  getContactUsPagePathUrl(): string {
+    return `/contact-us`;
+  }
 }
 
 export const appRoutesObj = AppRoutes.getInstance();
