@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Button from "./components/user/button";
 import Layout from "./components/user/laoyt";
-import HomeContainer from "./containers/user/home-container";
 import { useState } from "react";
 interface Iimage {
   title: string;
